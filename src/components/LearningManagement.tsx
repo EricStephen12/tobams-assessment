@@ -18,16 +18,16 @@ const LearningManagement = () => {
       <div className="bg-bg-pale py-16 px-4 overflow-hidden">
         <div className="max-w-[1800px] mx-auto px-4">
 
-          {/* Mobile title */}
-          <h2 className="md:hidden text-3xl font-500 text-brand-primary mb-6">
+          {/* Title - hidden on desktop */}
+          <h2 className="lg:hidden text-3xl font-500 text-brand-primary mb-6">
             Learning Management System
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
             {/* Left: Image */}
-            <div className="flex-shrink-0 w-full md:w-auto flex justify-center">
-              <div className="relative w-[85vw] h-[85vw] sm:w-[480px] sm:h-[480px] md:w-[320px] md:h-[320px] lg:w-[700px] lg:h-[700px]">
+            <div className="flex-shrink-0 w-full lg:w-auto flex justify-center">
+              <div className="relative w-[85vw] h-[85vw] sm:w-[480px] sm:h-[480px] md:w-[560px] md:h-[560px] lg:w-[700px] lg:h-[700px]">
                 <Image
                   src={learningManagementImg}
                   alt="Learning Management System"
@@ -41,11 +41,11 @@ const LearningManagement = () => {
             <div className="flex-1 space-y-8 py-6 w-full">
 
               {/* Title - desktop only */}
-              <h2 className="hidden md:block text-3xl lg:text-5xl font-500 text-brand-primary">
+              <h2 className="hidden lg:block text-5xl font-500 text-brand-primary">
                 Learning Management System
               </h2>
 
-              <div className="bg-bg-palepink backdrop-blur-sm p-6 md:p-12 rounded-3xl border border-white/20 space-y-6">
+              <div className="bg-bg-palepink backdrop-blur-sm p-6 lg:p-12 rounded-3xl border border-white/20 space-y-6">
                 <p className="text-black text-lg leading-relaxed">
                   TG Academy is a hub of knowledge and skill-building resources designed to empower tech talents on their learning journey. From technical courses covering the latest programming languages and development frameworks to soft skills training in leadership, effective communication and project management, TG Academy offers a wide range of courses to cater to diverse learning needs. With accessible and interactive learning materials, individuals can enhance their skills and stay ahead in today&apos;s competitive tech landscape.
                 </p>
@@ -54,7 +54,7 @@ const LearningManagement = () => {
                   <h3 className="text-brand-primary font-600 text-xl">
                     Some of our courses include:
                   </h3>
-                  <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-3">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3">
                     {courses.map((course) => (
                       <li key={course} className="flex items-center gap-2 text-black">
                         <span className="w-1.5 h-1.5 rounded-full bg-black" />
@@ -64,14 +64,14 @@ const LearningManagement = () => {
                   </ul>
                 </div>
 
-                {/* CTA inside card on mobile, hidden on desktop */}
-                <div className="flex justify-start md:hidden pt-2">
+                {/* CTA inside card on mobile/tablet */}
+                <div className="flex justify-start lg:hidden pt-2">
                   <CTA text="Learn More" showArrow={true} />
                 </div>
               </div>
 
               {/* CTA outside card on desktop only */}
-              <div className="hidden md:flex justify-start pt-4">
+              <div className="hidden lg:flex justify-start pt-4">
                 <CTA text="Learn More" showArrow={true} />
               </div>
 

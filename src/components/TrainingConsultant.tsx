@@ -40,8 +40,8 @@ const TrainingConsultant = () => {
           </p>
         </div>
 
-        <div className="bg-brand-primary rounded-[5px] p-4 md:p-5 text-white">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-20 md:gap-y-12">
+        <div className="bg-brand-primary rounded-[5px] p-4 lg:p-5 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-20 lg:gap-y-12">
             {benefits.map((benefit) => (
               <div key={benefit.title} className="space-y-2">
                 <h4 className="text-base md:text-xl font-semibold flex items-center gap-2">

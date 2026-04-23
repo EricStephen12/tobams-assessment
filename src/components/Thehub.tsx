@@ -30,10 +30,10 @@ const Thehub = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Image */}
-          <div className="flex-shrink-0 w-full md:w-auto">
-            <div className="relative w-full h-[240px] md:w-[280px] md:h-[200px] lg:w-[550px] lg:h-[380px]">
+          <div className="flex-shrink-0 w-full lg:w-auto">
+            <div className="relative w-full h-[280px] md:h-[360px] lg:w-[550px] lg:h-[380px]">
               <Image
                 src={hubImg}
                 alt="Transformation Hub"
@@ -44,7 +44,7 @@ const Thehub = () => {
           </div>
 
           {/* Cards + CTA */}
-          <div className="flex-1 space-y-6 md:space-y-8 bg-white/20 p-4 md:p-6 rounded-2xl w-full">
+          <div className="flex-1 space-y-6 lg:space-y-8 bg-white/20 p-4 lg:p-6 rounded-2xl w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {points.map((point) => (
                 <div

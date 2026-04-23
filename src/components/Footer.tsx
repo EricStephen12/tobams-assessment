@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="w-full px-4">
       {/* CTA Banner */}
-      <div className="bg-bg-footerbanner py-10 px-6 md:py-16 md:px-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-white/5">
+      <div className="bg-bg-footerbanner py-10 px-6 lg:py-16 lg:px-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 border-b border-white/5">
         <div className="space-y-3 md:space-y-4">
           <p className="text-white text-base md:text-xl font-medium">Ready to be a part of something extraordinary?</p>
           <h2 className="text-3xl md:text-5xl font-500 text-white tracking-tight">Let&apos;s work together to create a difference</h2>
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
 
           {/* Offices + Contact Card */}
-          <div className="bg-bg-footerbanner rounded-3xl p-6 md:p-12 flex flex-col md:grid md:grid-cols-3 gap-8 md:gap-16 border border-white/5 shadow-2xl">
+          <div className="bg-bg-footerbanner rounded-3xl p-6 lg:p-12 flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-16 border border-white/5 shadow-2xl">
             {/* Contact Info — first on mobile, last on desktop */}
             <div className="order-1 md:order-2 space-y-6 md:space-y-8 md:border-l md:border-white/10 md:pl-16 md:col-start-3">
               <h5 className="text-xl md:text-2xl font-600 text-white">Contact Information</h5>
