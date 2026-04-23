@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Tobams Groups",
+  title: "Tobams Group | Training and Development",
   description: "Tobams Group is a leading digital consulting agency specializing in digital transformation, tech talent empowerment, and innovative digital solutions for global success.",
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -14,9 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar></Navbar>
-        {children}</body>
+      <body>{children}</body>
     </html>
   );
 }

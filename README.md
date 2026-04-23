@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tobams Group — Frontend Intern Assessment
+
+A responsive landing page for Tobams Group's Training and Development offering, built to match the provided Figma design as closely as possible.
+
+---
+
+## Live URL
+
+> **[https://tobams-assessment.vercel.app](https://tobams-assessment.vercel.app)**  
+> *(Update after deploying)*
+
+---
+
+## Figma Reference
+
+[View Figma Design](https://www.figma.com/proto/waigC1hK1feTgR6io5SRRo7u/Frontend-Intern-Assessment?node-id=1-13556&t=ZdgOWHVGyXDtPXzf-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/YOUR_USERNAME/tobams-assessment.git
+cd tobams-assessment
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Stack
 
-## Learn More
+- **Next.js 15** — App Router
+- **Tailwind CSS v4** — only CSS framework used
+- **TypeScript**
+- **next/image** — all images go through this for optimization
+- **react-icons** — icons only, no UI kit
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+└── components/
+    ├── Navbar.tsx
+    ├── Hero.tsx
+    ├── LearningManagement.tsx
+    ├── LMSBlock.tsx
+    ├── ManagementDevelopment.tsx
+    ├── Thehub.tsx
+    ├── TrainingConsultant.tsx
+    ├── BookConsultation.tsx
+    ├── Testimonials.tsx
+    ├── Footer.tsx
+    └── CTA.tsx
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Responsive Breakpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tested and works at:
+- **425px** — mobile
+- **768px** — tablet
+- **1280px+** — desktop
+
+Only Tailwind's `sm:`, `md:`, and `lg:` prefixes were used. No custom media queries.
+
+---
+
+## Design Decisions
+
+**Hero title difference** — The Figma mobile frame shows "Learning and Development" while the desktop frame shows "Training and Development". I matched both exactly using conditional rendering (`md:hidden` / `hidden md:inline`).
+
+**CTA component** — Built a single reusable `CTA` component with `primary`, `secondary`, and `white` variants. It shows a chevron icon on mobile and an arrow icon on desktop, matching the Figma spec.
+
+**Color tokens** — All brand colors are defined as CSS variables in `globals.css` and referenced through Tailwind's config (e.g. `bg-brand-primary`, `bg-bg-footer`). This keeps things consistent and easy to change.
+
+**Font weights** — Added `font-500` and `font-600` as custom Tailwind utilities instead of using arbitrary values like `font-[500]`. Cleaner and more maintainable.
+
+**Mobile hamburger menu** — The mobile nav uses a white icon inside a black box, exactly as shown in the Figma mobile frame.
+
+---
+
+## AI Tool Usage
+
+I used GitHub Copilot occasionally for autocomplete suggestions while writing repetitive Tailwind class patterns. All component structure, layout decisions, and design matching were done by me.
+
+---
+
+## Known Issues
+
+None at time of submission.

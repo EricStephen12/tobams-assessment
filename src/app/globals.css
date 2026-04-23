@@ -13,7 +13,11 @@
   --color-bg-whitelight: #F7F7F9;
   --color-brand-blue: #1671D9;
   --color-bg-palepink: #5712441A;
+  --color-bg-footer: #11040E;
+  --color-bg-footerbanner: #1D0617;
 
+  --font-weight-500: 500;
+  --font-weight-600: 600;
 }
 
 @keyframes fadeIn {
@@ -49,4 +53,12 @@
 @keyframes slideInBottom {
   from { transform: translateY(40px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

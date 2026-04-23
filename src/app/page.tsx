@@ -7,6 +7,7 @@ import LearningManagement from "@/components/LearningManagement";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import Thehub from "@/components/Thehub";
+import BookConsultation from "@/components/BookConsultation";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ManagementDevelopment />
       <Thehub />
       <TrainingConsultant />
+      <BookConsultation />
       <Testimonials />
       <Footer />
     </main>
