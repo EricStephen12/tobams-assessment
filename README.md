@@ -6,7 +6,7 @@ A responsive landing page for Tobams Group's Training and Development offering, 
 
 ## Live URL
 
-> **[https://tobams-assessment.vercel.app](https://tobams-assessment.vercel.app)**  
+> **[https://tobams-assessment-51x9.vercel.app/](https://tobams-assessment-51x9.vercel.app/)**  
 > *(Update after deploying)*
 
 ---
@@ -20,7 +20,7 @@ A responsive landing page for Tobams Group's Training and Development offering, 
 ## Getting Started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/tobams-assessment.git
+git clone https://github.com/EricStephen12/tobams-assessment.git
 cd tobams-assessment
 npm install
 npm run dev
