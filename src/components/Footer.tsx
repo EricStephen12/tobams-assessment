@@ -118,9 +118,9 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-6 md:pt-10 border-t border-white/10 text-white text-[13px] md:text-[15px]">
-            {/* Mobile layout */}
-            <div className="flex flex-col items-center gap-2 md:hidden text-white/60">
+          <div className="pt-6 lg:pt-10 border-t border-white/10 text-white text-[13px] lg:text-[15px]">
+            {/* Mobile + Tablet layout */}
+            <div className="flex flex-col items-center gap-2 lg:hidden text-white/60">
               <div className="flex gap-6">
                 <Link href="#" className="transition-colors underline">Privacy Policy</Link>
                 <Link href="#" className="transition-colors underline">Cookies Policy</Link>
@@ -129,7 +129,7 @@ const Footer = () => {
               <p className="text-center mt-1">Copyright &copy; Tobams Group, 2024. All rights reserved.</p>
             </div>
             {/* Desktop layout */}
-            <div className="hidden md:flex items-center justify-between">
+            <div className="hidden lg:flex items-center justify-between">
               <p>Copyright &copy; Tobams Group, 2024. All rights reserved.</p>
               <div className="flex gap-10">
                 {["Terms and Conditions", "Privacy Policy", "Cookies Policy"].map(item => (
