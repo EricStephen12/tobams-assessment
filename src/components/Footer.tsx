@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="max-w-[1800px] mx-auto space-y-12 md:space-y-24">
           
           {/* Links Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-16">
             {/* Logo + About */}
             <div className="space-y-6 md:space-y-10">
               <div className="relative w-[200px] md:w-[240px] h-[60px] md:h-[70px]">

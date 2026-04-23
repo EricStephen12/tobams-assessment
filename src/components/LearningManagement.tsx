@@ -27,7 +27,7 @@ const LearningManagement = () => {
 
             {/* Left: Image */}
             <div className="flex-shrink-0 w-full md:w-auto flex justify-center">
-              <div className="relative w-[85vw] h-[85vw] sm:w-[480px] sm:h-[480px] md:w-[700px] md:h-[700px]">
+              <div className="relative w-[85vw] h-[85vw] sm:w-[480px] sm:h-[480px] md:w-[320px] md:h-[320px] lg:w-[700px] lg:h-[700px]">
                 <Image
                   src={learningManagementImg}
                   alt="Learning Management System"
@@ -41,7 +41,7 @@ const LearningManagement = () => {
             <div className="flex-1 space-y-8 py-6 w-full">
 
               {/* Title - desktop only */}
-              <h2 className="hidden md:block text-5xl font-500 text-brand-primary">
+              <h2 className="hidden md:block text-3xl lg:text-5xl font-500 text-brand-primary">
                 Learning Management System
               </h2>
 

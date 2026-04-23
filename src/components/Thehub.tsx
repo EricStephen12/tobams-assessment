@@ -33,7 +33,7 @@ const Thehub = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Image */}
           <div className="flex-shrink-0 w-full md:w-auto">
-            <div className="relative w-full h-[240px] md:w-[550px] md:h-[380px]">
+            <div className="relative w-full h-[240px] md:w-[280px] md:h-[200px] lg:w-[550px] lg:h-[380px]">
               <Image
                 src={hubImg}
                 alt="Transformation Hub"

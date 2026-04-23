@@ -13,7 +13,7 @@ const ManagementDevelopment = () => {
 
   return (
     <section className="py-10 md:py-20 px-4 bg-gray-50">
-      <div className="max-w-[1800px] mx-auto bg-bg-darkpurple rounded-[40px] overflow-hidden p-6 md:p-16">
+      <div className="max-w-[1800px] mx-auto bg-bg-darkpurple rounded-[40px] overflow-hidden p-6 md:p-10 lg:p-16">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20">
 
           {/* Title — top on mobile only */}
@@ -23,7 +23,7 @@ const ManagementDevelopment = () => {
 
           {/* Left: Image */}
           <div className="flex-shrink-0 w-full md:w-auto">
-            <div className="relative w-full h-[240px] md:w-[650px] md:h-[720px]">
+            <div className="relative w-full h-[240px] md:w-[300px] md:h-[340px] lg:w-[650px] lg:h-[720px]">
               <Image
                 src={managementDevelopmentImg}
                 alt="Management Development Program"

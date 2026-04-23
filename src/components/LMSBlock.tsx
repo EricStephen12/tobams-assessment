@@ -42,7 +42,7 @@ const LMSBlock = () => {
         <div className="max-w-[1800px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-10 md:gap-20">
           {/* Content */}
           <div className="flex-1 space-y-6 md:space-y-8 w-full order-2 md:order-1">
-            <h2 className="text-3xl md:text-5xl font-medium text-black">Corporate Trainings</h2>
+            <h2 className="text-3xl md:text-3xl lg:text-5xl font-medium text-black">Corporate Trainings</h2>
             <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-2xl">
               Empower your team with our customised Corporate Training programs designed to address the unique needs and objectives of your organisation. Our expert facilitators work closely with your team to deliver tailored learning experiences that align with your company&apos;s goals and values.
             </p>
@@ -83,7 +83,7 @@ const LMSBlock = () => {
           </div>
           {/* Content */}
           <div className="flex-1 space-y-6 md:space-y-8 w-full order-2 md:order-2">
-            <h2 className="text-3xl md:text-5xl font-medium text-black">Personalised Individual Training</h2>
+            <h2 className="text-3xl md:text-3xl lg:text-5xl font-medium text-black">Personalised Individual Training</h2>
             <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-2xl">
               Begin a journey of lifelong learning and professional development with Tobams Group&apos;s diverse range of training programs for individuals. From technical skills mastery to soft skills enhancement, our courses cover a wide spectrum of topics to meet the evolving needs of today&apos;s professionals.
             </p>
@@ -102,7 +102,7 @@ const LMSBlock = () => {
         <div className="max-w-[1800px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-10 md:gap-20">
           {/* Content */}
           <div className="flex-1 space-y-6 md:space-y-8 w-full order-2 md:order-1">
-            <h2 className="text-3xl md:text-5xl font-medium text-black">Capacity Development</h2>
+            <h2 className="text-3xl md:text-3xl lg:text-5xl font-medium text-black">Capacity Development</h2>
             <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-2xl">
               At Tobams Group, we empower individuals and organizations through tailored training programs, expert-led workshops, and personalized mentorship. We are committed to your success and growth. We are dedicated to providing a comprehensive suite of benefits designed to foster your development and success:
             </p>
