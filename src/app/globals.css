@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #571244;
+  --color-brand-secondary: #EF4353;
+  --color-brand-user: #e0e0e0;
+  --color-bg-pale: #5712441A;
+  --color-bg-pale-dark: #57124433;
+  --color-bg-lightpink: #ede0eb;
+  --color-bg-darkpurple: #2e0a24;
+  --color-bg-lighterpurple: #8F6182;
+  --color-bg-pink: #EF435333;
+  --color-bg-whitelight: #F7F7F9;
+  --color-brand-blue: #1671D9;
+  --color-bg-palepink: #5712441A;
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-in {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+.fade-in {
+  animation-name: fadeIn;
+}
+.slide-in-from-left {
+  animation-name: slideInLeft;
+}
+.slide-in-from-right {
+  animation-name: slideInRight;
+}
+.slide-in-from-bottom {
+  animation-name: slideInBottom;
+}
+
+@keyframes slideInBottom {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
